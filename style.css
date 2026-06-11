@@ -222,6 +222,20 @@ h1, h2, h3 { font-family: var(--display); }
 
 a:focus-visible, button:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 6px; }
 
+/* ── Language toggle (TR/EN) ───────────────────────────────────────── */
+html[data-lang="tr"] [data-l="en"], html[data-lang="en"] [data-l="tr"] { display: none !important; }
+.lang-toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 100px; overflow: hidden; }
+.lang-toggle button {
+  font-family: var(--display); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.02em;
+  padding: 7px 12px; background: transparent; color: var(--muted); border: none; cursor: pointer; line-height: 1;
+  transition: background 0.15s, color 0.15s;
+}
+.lang-toggle button[aria-pressed="true"] { background: var(--brand); color: #fff; }
+.lang-toggle-float {
+  position: fixed; top: 12px; right: 12px; z-index: 60;
+  background: rgba(14, 12, 11, 0.82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+
 /* ── Responsive ───────────────────────────────────────────────────── */
 @media (max-width: 880px) {
   body { font-size: 16px; }
