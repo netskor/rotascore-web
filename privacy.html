@@ -7,56 +7,12 @@
   <meta name="description" content="Privacy Policy for the Rotascore app and website." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #080c10;
-      --surface: #0d1318;
-      --border: #1a2330;
-      --accent: #00e87a;
-      --accent2: #0095ff;
-      --text: #e8eef4;
-      --muted: #8a99a8;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Barlow', sans-serif;
-      font-weight: 300;
-      line-height: 1.7;
-    }
-    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 96px; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .brand {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 900; font-size: 28px; letter-spacing: 1px;
-      color: var(--text); display: inline-block; margin-bottom: 40px;
-    }
-    .brand span { color: var(--accent); }
-    h1 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: 44px; line-height: 1.1; margin-bottom: 8px;
-    }
-    .updated { color: var(--muted); font-size: 14px; margin-bottom: 40px; }
-    h2 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 26px; margin: 40px 0 12px;
-      padding-top: 24px; border-top: 1px solid var(--border);
-    }
-    p, li { color: #c3cdd7; font-size: 16px; margin-bottom: 12px; }
-    ul { padding-left: 22px; margin-bottom: 12px; }
-    .lang-note {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 10px; padding: 14px 18px; font-size: 14px; color: var(--muted);
-      margin-bottom: 32px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <a class="brand" href="/">ROTA<span>SCORE</span></a>
+  <div class="doc">
+    <a class="brand" href="/"><span class="r">R</span>otascore</a>
 
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: June 11, 2026</p>
@@ -71,7 +27,7 @@
       <li><strong>Favorites and preferences.</strong> Teams, leagues, players and matches you follow, and your notification preferences, so we can sync them across your devices when you are signed in.</li>
       <li><strong>Device push token.</strong> A token issued by Apple/Google so we can deliver the notifications you request (for example goal alerts).</li>
       <li><strong>Approximate location (country).</strong> We derive your country from your IP address to show you a relevant default feed (for example local leagues). We never collect your precise location.</li>
-      <li><strong>Usage and diagnostics data.</strong> Anonymous interaction events, crash logs and performance data (via Google Firebase Analytics and Crashlytics) that help us fix bugs and improve the app. This data is not linked to your identity.</li>
+      <li><strong>Usage and diagnostics data.</strong> Anonymous interaction events, crash logs and performance data (via Google Firebase Analytics and Crashlytics) that help us fix bugs and improve the app. This data is not linked to your identity. Analytics is <strong>opt-in</strong>: it is collected only with the consent you give on first launch, and you can withdraw that consent at any time in Settings &rarr; Privacy.</li>
     </ul>
 
     <h2>What We Do NOT Do</h2>
@@ -113,7 +69,7 @@
     <h2 id="turkce">Gizlilik Politikası (Türkçe)</h2>
     <p>KVKK m.10 kapsamındaki ayrıntılı aydınlatma metnimiz için: <a href="/kvkk.html">KVKK Aydınlatma Metni</a></p>
     <p>Bu Gizlilik Politikası, <strong>Durbay Otomotiv Mimarlık İnşaat Ticaret Limited Şirketi</strong>'nin <strong>Rotascore</strong> mobil uygulamasında ve rotascore.com'da bilgilerinizi nasıl işlediğini açıklar.</p>
-    <p><strong>Topladığımız veriler:</strong> (1) Giriş yapmayı seçerseniz (Apple veya Google ile) Firebase Authentication üzerinden ad, e-posta ve kullanıcı kimliği — hesap oluşturmak isteğe bağlıdır; (2) favori takım/lig/oyuncularınız ve bildirim tercihleriniz (cihazlar arası senkron için); (3) bildirim gönderebilmek için cihaz push token'ı; (4) IP adresinizden türetilen <em>ülke düzeyinde</em> yaklaşık konum (hassas konum asla toplanmaz); (5) kimliğinizle ilişkilendirilmeyen anonim kullanım, çökme ve performans verileri (Google Firebase Analytics ve Crashlytics).</p>
+    <p><strong>Topladığımız veriler:</strong> (1) Giriş yapmayı seçerseniz (Apple veya Google ile) Firebase Authentication üzerinden ad, e-posta ve kullanıcı kimliği — hesap oluşturmak isteğe bağlıdır; (2) favori takım/lig/oyuncularınız ve bildirim tercihleriniz (cihazlar arası senkron için); (3) bildirim gönderebilmek için cihaz push token'ı; (4) IP adresinizden türetilen <em>ülke düzeyinde</em> yaklaşık konum (hassas konum asla toplanmaz); (5) kimliğinizle ilişkilendirilmeyen anonim kullanım, çökme ve performans verileri (Google Firebase Analytics ve Crashlytics). Analitik <strong>açık rızaya</strong> bağlıdır: yalnızca uygulamayı ilk açtığınızda verdiğiniz rıza ile toplanır; rızanızı Ayarlar &rarr; Gizlilik bölümünden dilediğiniz an geri alabilirsiniz.</p>
     <p><strong>Yapmadıklarımız:</strong> Verilerinizi satmayız; sizi başka şirketlerin uygulama ve siteleri üzerinden takip etmeyiz; üçüncü taraf reklam göstermeyiz; hassas konum, rehber, fotoğraf veya mesajlarınızı toplamayız.</p>
     <p><strong>Saklama ve silme:</strong> Hesap verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı uygulama içinden (Profil → Hesap → Hesabı Sil) veya <a href="mailto:help@rotascore.com">help@rotascore.com</a> adresine yazarak istediğiniz zaman silebilirsiniz.</p>
     <p><strong>Haklarınız (KVKK / GDPR):</strong> Kişisel verilerinize erişme, düzeltme, taşıma, silme ve belirli işlemelere itiraz etme hakkına sahipsiniz. Talepleriniz için <a href="mailto:help@rotascore.com">help@rotascore.com</a> adresine yazabilirsiniz; tüm taleplere 30 gün içinde yanıt veririz.</p>
