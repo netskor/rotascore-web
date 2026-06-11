@@ -169,8 +169,6 @@ h1, h2, h3 { font-family: var(--display); }
   padding: 8px 14px; border-radius: 100px;
 }
 .chip .material-symbols-rounded { font-size: 18px; color: var(--brand); }
-.frow . glyph { color: var(--brand); }
-.frow .eyebrow .material-symbols-rounded { font-size: 19px; }
 
 /* ── Coverage strip ───────────────────────────────────────────────── */
 .coverage { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg-2); }
