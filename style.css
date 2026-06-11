@@ -120,21 +120,44 @@ section { position: relative; z-index: 1; }
 .btn-store .s2 { display: block; font-weight: 700; font-size: 1.16rem; line-height: 1.12; letter-spacing: -0.01em; }
 
 /* ── Device frame (titanium bezel + real screenshot, store recipe) ─── */
-.phone-wrap { display: flex; justify-content: center; }
+.phone-wrap { display: flex; justify-content: center; animation: float 6.5s ease-in-out infinite; }
 .phone {
   position: relative;
-  width: min(300px, 78vw);
-  border-radius: 46px;
-  padding: 9px;
-  background: linear-gradient(150deg, #5a5a5f 0%, #2c2c2f 35%, #18181a 70%, #3c3c40 100%);
-  box-shadow: 0 50px 110px rgba(0, 0, 0, 0.6), 0 0 130px rgba(247, 81, 20, 0.16);
-  animation: float 6.5s ease-in-out infinite;
+  width: min(324px, 80vw);
+  border-radius: 50px;
+  padding: 11px;
+  background: linear-gradient(145deg, #74747a 0%, #3c3c40 24%, #1b1b1e 54%, #303034 76%, #56565c 100%);
+  box-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.35) inset,
+    0 -1px 2px rgba(0, 0, 0, 0.5) inset,
+    0 60px 120px rgba(0, 0, 0, 0.62),
+    0 8px 26px rgba(0, 0, 0, 0.4),
+    0 0 150px rgba(247, 81, 20, 0.18);
 }
-.phone .screen { position: relative; border-radius: 38px; overflow: hidden; background: #000; display: block; }
+/* Side buttons */
+.phone::before {
+  content: ''; position: absolute; left: -2px; top: 116px; width: 2px; height: 30px;
+  background: linear-gradient(#48484d, #232326); border-radius: 3px 0 0 3px;
+  box-shadow: 0 44px 0 #303034, 0 82px 0 #303034;
+}
+.phone::after {
+  content: ''; position: absolute; right: -2px; top: 150px; width: 2px; height: 58px;
+  background: linear-gradient(#48484d, #232326); border-radius: 0 3px 3px 0;
+}
+.phone .screen {
+  position: relative; border-radius: 39px; overflow: hidden; background: #000; display: block;
+  box-shadow: 0 0 0 2.5px #0b0b0d;
+}
 .phone .screen img { width: 100%; display: block; }
+/* Subtle glass sheen over the screenshot */
+.phone .screen::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 3;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.03) 18%, transparent 42%);
+}
 .phone .island {
   position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
-  width: 31%; height: 22px; background: #000; border-radius: 100px; z-index: 2;
+  width: 26%; height: 23px; background: #000; border-radius: 100px; z-index: 4;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 /* ── Screenshots gallery ──────────────────────────────────────────── */
