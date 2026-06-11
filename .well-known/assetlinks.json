@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rotascore.app",
+      "sha256_cert_fingerprints": [
+        "E2:2E:34:41:8A:33:45:AD:97:0B:B9:6A:4E:71:A7:D8:19:63:C2:9D:92:3D:9F:85:AD:C3:52:D8:45:A0:C0:C2"
+      ]
+    }
+  }
+]

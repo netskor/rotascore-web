@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["UB66CY565Z.com.rotascore.app"],
+        "components": [
+          { "/": "/match/*" },
+          { "/": "/team/*" },
+          { "/": "/league/*" },
+          { "/": "/player/*" }
+        ]
+      }
+    ]
+  }
+}
