@@ -10,23 +10,48 @@
   <meta property="og:description" content="Canlı skorlar, anlık bildirimler ve derin istatistikler — tek, sade bir uygulamada." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://rotascore.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block" />
-  <link rel="stylesheet" href="/style.css?v=5" />
+  <link rel="stylesheet" href="/style.css?v=7" />
+  <link rel="canonical" href="https://rotascore.com/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta property="og:image" content="https://rotascore.com/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://rotascore.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Rotascore" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:title" content="Rotascore — Canlı Skor Uygulaması" />
+  <meta name="twitter:description" content="Canlı skorlar, anlık bildirimler ve derin istatistikler — tek, sade bir uygulamada." />
+  <!-- TODO: App Store yayininda ekle -> <meta name="apple-itunes-app" content="app-id=APP_STORE_ID"> -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"Rotascore","operatingSystem":"iOS, Android","applicationCategory":"SportsApplication","description":"Canli futbol skorlari, anlik gol bildirimleri, favori takibi, derin istatistikler ve mac ozetleri.","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},"publisher":{"@type":"Organization","name":"Rotascore"},"url":"https://rotascore.com/"}
+  </script>
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="site-header">
     <a class="brand" href="/" aria-label="Rotascore"><img class="rlogo" src="/logo.svg" alt="" />otascore</a>
-    <a class="nav-cta" href="#indir">İndir</a>
+    <nav aria-label="Ana menü">
+      <a class="lnk" href="#ozellikler">Özellikler</a>
+      <a class="lnk" href="#kapsam">Kapsam</a>
+      <a class="nav-cta" href="#indir">İndir</a>
+    </nav>
   </header>
 
   <!-- HERO -->
   <section class="container">
     <div class="hero">
       <div class="hero-copy">
-        <div class="eyebrow rise">Canlı skor</div>
-        <h1 class="rise d1">Sahanın merkezinde<br><span class="accent">sen varsın.</span></h1>
+        <div class="eyebrow rise">Canlı skor uygulaması</div>
+        <h1 class="rise d1">Sahanın<br>merkezinde<br><span class="accent">sen varsın.</span></h1>
         <p class="lede rise d2">Canlı futbol skorları, anlık gol bildirimleri, favori takım ve liglerin, derin istatistikler ve maç özetleri — hepsi tek, sade bir uygulamada.</p>
         <div class="store-row rise d3" id="indir">
           <!-- TODO: yayına alınca href'leri App Store / Google Play linkleriyle değiştir -->
@@ -41,10 +66,8 @@
         </div>
         <p class="store-note">App Store ve Google Play'de çok yakında.</p>
       </div>
-
-      <!-- Real app screenshot in a titanium device frame -->
       <div class="phone-wrap rise d2">
-        <div class="phone">
+        <div class="phone float">
           <div class="screen">
             <div class="island"></div>
             <img src="/shots/home.png" alt="Rotascore uygulaması — canlı maçlar ekranı" />
@@ -54,87 +77,91 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="block">
-    <div class="container">
-      <div class="eyebrow">Neden Rotascore</div>
-      <h2 class="section-title">Gerçek taraftar için tasarlandı.</h2>
-      <div class="features">
-
-        <div class="feature">
-          <div class="ic"><span class="material-symbols-rounded">sports_soccer</span></div>
-          <h3>Canlı skor & anlık bildirim</h3>
-          <p>Goller, kartlar ve maç sonları saniyeler içinde ekranında. Takip ettiğin maçlar için anlık bildirim al.</p>
-        </div>
-
-        <div class="feature">
-          <div class="ic"><span class="material-symbols-rounded">star</span></div>
-          <h3>Favorilerini takip et</h3>
-          <p>Takım, lig ve oyuncularını ekle; kişisel akışın oluşsun ve tercihlerin tüm cihazlarında senkron olsun.</p>
-        </div>
-
-        <div class="feature">
-          <div class="ic"><span class="material-symbols-rounded">query_stats</span></div>
-          <h3>Derin istatistik & kadrolar</h3>
-          <p>İlk 11, dizilişler, topla oynama, şutlar, puan durumu ve takım karşılaştırmaları — sade ve okunaklı.</p>
-        </div>
-
-        <div class="feature">
-          <div class="ic"><span class="material-symbols-rounded">smart_display</span></div>
-          <h3>Maç özetleri & anlatım</h3>
-          <p>Önemli anların videoları ve dakika dakika anlatım — kaçırdığın maçı tek dokunuşla yakala.</p>
-        </div>
-
-      </div>
+  <!-- STATS -->
+  <section class="container">
+    <div class="stats">
+      <div class="stat"><div class="n">900<em>+</em></div><div class="l">Lig &amp; kupa</div></div>
+      <div class="stat"><div class="n">7<em>/</em>24</div><div class="l">Canlı veri akışı</div></div>
+      <div class="stat"><div class="n"><em>&lt;</em>1 sn</div><div class="l">Skor güncellemesi</div></div>
+      <div class="stat"><div class="n">Ücretsiz</div><div class="l">iOS &amp; Android</div></div>
     </div>
   </section>
 
-  <!-- SCREENSHOTS GALLERY -->
-  <section class="block coverage" style="border-bottom:none">
-    <div class="container">
-      <div class="eyebrow">Uygulamadan</div>
-      <h2 class="section-title">Maç merkezine yakından bak.</h2>
-      <div class="gallery">
-        <figure class="shot">
-          <div class="phone">
-            <div class="screen"><div class="island"></div><img src="/shots/match.jpg" alt="Maç detayı ekranı" loading="lazy" /></div>
-          </div>
-          <figcaption class="cap"><b>Maç merkezi</b>Skor, olaylar, istatistik ve özet</figcaption>
-        </figure>
-        <figure class="shot">
-          <div class="phone">
-            <div class="screen"><div class="island"></div><img src="/shots/feed.jpg" alt="Akış ekranı" loading="lazy" /></div>
-          </div>
-          <figcaption class="cap"><b>Akış</b>Transferler, haberler ve özetler</figcaption>
-        </figure>
+  <!-- FEATURE ROWS -->
+  <div id="ozellikler" class="container">
+
+    <section class="frow">
+      <div class="copy">
+        <div class="eyebrow"><span class="no">01</span> Canlı skor</div>
+        <h2>Goller saniyesinde,<br>cebinde.</h2>
+        <p>Skorlar, kırmızı kartlar ve maç sonları gerçek zamanlı düşer. Takip ettiğin maçlar için anlık bildirim al; tek bir an bile kaçmasın.</p>
+        <div class="chips">
+          <span class="chip"><span class="material-symbols-rounded">notifications_active</span>Gol bildirimi</span>
+          <span class="chip"><span class="material-symbols-rounded">bolt</span>Anlık güncelleme</span>
+          <span class="chip"><span class="material-symbols-rounded">schedule</span>Canlı dakika</span>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="media">
+        <div class="phone"><div class="screen"><div class="island"></div><img src="/shots/home.png" alt="Canlı maçlar listesi" loading="lazy" /></div></div>
+      </div>
+    </section>
+
+    <section class="frow rev">
+      <div class="copy">
+        <div class="eyebrow"><span class="no">02</span> Maç merkezi</div>
+        <h2>Maçın her detayı,<br>tek ekranda.</h2>
+        <p>Diziliş ve kadrolar, dakika dakika anlatım, şut ve topla oynama istatistikleri, penaltılar ve maç özeti — bir maçla ilgili her şey bir arada.</p>
+        <div class="chips">
+          <span class="chip"><span class="material-symbols-rounded">timeline</span>Olaylar</span>
+          <span class="chip"><span class="material-symbols-rounded">query_stats</span>İstatistik</span>
+          <span class="chip"><span class="material-symbols-rounded">groups</span>Kadrolar</span>
+        </div>
+      </div>
+      <div class="media">
+        <div class="phone"><div class="screen"><div class="island"></div><img src="/shots/match.jpg" alt="Maç detayı ekranı" loading="lazy" /></div></div>
+      </div>
+    </section>
+
+    <section class="frow">
+      <div class="copy">
+        <div class="eyebrow"><span class="no">03</span> Akış &amp; favoriler</div>
+        <h2>Takip ettiklerin,<br>akışına gelsin.</h2>
+        <p>Takım, lig ve oyuncularını ekle; transferler, haberler ve maç özetleri kişisel akışında toplansın. Tercihlerin tüm cihazlarında senkron.</p>
+        <div class="chips">
+          <span class="chip"><span class="material-symbols-rounded">star</span>Favoriler</span>
+          <span class="chip"><span class="material-symbols-rounded">sync_alt</span>Transferler</span>
+          <span class="chip"><span class="material-symbols-rounded">smart_display</span>Özetler</span>
+        </div>
+      </div>
+      <div class="media">
+        <div class="phone"><div class="screen"><div class="island"></div><img src="/shots/feed.jpg" alt="Akış ekranı" loading="lazy" /></div></div>
+      </div>
+    </section>
+
+  </div>
 
   <!-- COVERAGE -->
-  <section class="coverage">
+  <section class="coverage" id="kapsam">
     <div class="container">
       <p class="cov-line"><b>Süper Lig</b><span class="sep">·</span><b>Şampiyonlar Ligi</b><span class="sep">·</span><b>Premier Lig</b><span class="sep">·</span><b>LaLiga</b><span class="sep">·</span><b>Serie A</b><span class="sep">·</span><b>Bundesliga</b><span class="sep">·</span>ve yüzlerce lig &amp; kupa</p>
     </div>
   </section>
 
   <!-- DOWNLOAD CTA -->
-  <section class="block cta-band">
+  <section class="cta">
     <div class="container">
-      <div class="inner">
-        <h2>Hemen indir, hiçbir golü kaçırma.</h2>
-        <p>iOS ve Android için Rotascore — ücretsiz.</p>
-        <div class="store-row">
-          <!-- TODO: yayına alınca href'leri App Store / Google Play linkleriyle değiştir -->
-          <a class="btn-store" href="#" aria-label="App Store'dan indir">
-            <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.1 3-.74.88-1.96 1.56-3.05 1.47-.13-1.1.42-2.27 1.06-3.02.72-.85 2.02-1.5 3.09-1.45zM20.5 17.2c-.55 1.27-.82 1.84-1.53 2.97-.99 1.57-2.39 3.52-4.12 3.53-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.06-1.78-4.05-3.35-2.77-4.38-3.06-9.51-1.35-12.24 1.21-1.93 3.13-3.06 4.93-3.06 1.84 0 3 .99 4.52.99 1.48 0 2.38-.99 4.51-.99 1.61 0 3.32.88 4.54 2.39-3.99 2.18-3.34 7.86.66 9.75z"/></svg>
-            <span><span class="s1">İndir</span><span class="s2">App Store</span></span>
-          </a>
-          <a class="btn-store" href="#" aria-label="Google Play'den indir">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M3.6 2.3c-.25.27-.4.69-.4 1.23v16.94c0 .54.15.96.4 1.23l.06.05L13.1 12.3v-.2L3.66 2.25l-.06.05z"/><path fill="#fff" d="M16.2 15.45 13.1 12.3v-.2l3.1-3.1.07.04 3.67 2.09c1.05.6 1.05 1.57 0 2.17l-3.67 2.09-.07.07z"/><path fill="#fff" d="m16.27 15.4-3.17-3.1L3.6 21.7c.35.37.92.41 1.57.05l11.1-6.35z"/><path fill="#fff" d="M16.27 8.9 5.17 2.55C4.52 2.18 3.95 2.23 3.6 2.6l9.5 9.5 3.17-3.2z" opacity=".85"/></svg>
-            <span><span class="s1">İNDİR</span><span class="s2">Google Play</span></span>
-          </a>
-        </div>
+      <h2>Hemen indir,<br><span class="accent">hiçbir golü kaçırma.</span></h2>
+      <p>iOS ve Android için Rotascore — ücretsiz.</p>
+      <div class="store-row">
+        <!-- TODO: yayına alınca href'leri App Store / Google Play linkleriyle değiştir -->
+        <a class="btn-store" href="#" aria-label="App Store'dan indir">
+          <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.1 3-.74.88-1.96 1.56-3.05 1.47-.13-1.1.42-2.27 1.06-3.02.72-.85 2.02-1.5 3.09-1.45zM20.5 17.2c-.55 1.27-.82 1.84-1.53 2.97-.99 1.57-2.39 3.52-4.12 3.53-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.06-1.78-4.05-3.35-2.77-4.38-3.06-9.51-1.35-12.24 1.21-1.93 3.13-3.06 4.93-3.06 1.84 0 3 .99 4.52.99 1.48 0 2.38-.99 4.51-.99 1.61 0 3.32.88 4.54 2.39-3.99 2.18-3.34 7.86.66 9.75z"/></svg>
+          <span><span class="s1">İndir</span><span class="s2">App Store</span></span>
+        </a>
+        <a class="btn-store" href="#" aria-label="Google Play'den indir">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M3.6 2.3c-.25.27-.4.69-.4 1.23v16.94c0 .54.15.96.4 1.23l.06.05L13.1 12.3v-.2L3.66 2.25l-.06.05z"/><path fill="#fff" d="M16.2 15.45 13.1 12.3v-.2l3.1-3.1.07.04 3.67 2.09c1.05.6 1.05 1.57 0 2.17l-3.67 2.09-.07.07z"/><path fill="#fff" d="m16.27 15.4-3.17-3.1L3.6 21.7c.35.37.92.41 1.57.05l11.1-6.35z"/><path fill="#fff" d="M16.27 8.9 5.17 2.55C4.52 2.18 3.95 2.23 3.6 2.6l9.5 9.5 3.17-3.2z" opacity=".85"/></svg>
+          <span><span class="s1">İNDİR</span><span class="s2">Google Play</span></span>
+        </a>
       </div>
     </div>
   </section>
