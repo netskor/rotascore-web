@@ -1,0 +1,5 @@
+# Rotascore — security contact (RFC 9116)
+Contact: mailto:help@rotascore.com
+Expires: 2027-06-18T00:00:00.000Z
+Preferred-Languages: tr, en
+Canonical: https://rotascore.com/.well-known/security.txt
