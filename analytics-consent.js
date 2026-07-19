@@ -4,9 +4,33 @@
 
   var MEASUREMENT_ID = 'G-NQ1BV7BSPY';
   var CONSENT_KEY = 'rs_analytics_consent';
+  var RESTRICTED_AD_REGIONS = [
+    'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+    'HU', 'IS', 'IE', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL',
+    'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB', 'CH'
+  ];
   var root = document.documentElement;
   var analyticsLoaded = false;
   var banner;
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () {
+    window.dataLayer.push(arguments);
+  };
+
+  // Queue consent defaults before any Google tag configuration. Advertising
+  // consent stays denied where regional rules require it, while other regions
+  // are not incorrectly reported as permanently denied. Analytics remains
+  // denied everywhere until the visitor explicitly allows it.
+  window.gtag('consent', 'default', {
+    analytics_storage: 'denied'
+  });
+  window.gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    region: RESTRICTED_AD_REGIONS
+  });
 
   if (!root.getAttribute('data-lang')) {
     root.setAttribute(
@@ -20,15 +44,8 @@
 
     analyticsLoaded = true;
     window['ga-disable-' + MEASUREMENT_ID] = false;
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = window.gtag || function () {
-      window.dataLayer.push(arguments);
-    };
-    window.gtag('consent', 'default', {
-      analytics_storage: 'granted',
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied'
+    window.gtag('consent', 'update', {
+      analytics_storage: 'granted'
     });
     window.gtag('js', new Date());
     window.gtag('config', MEASUREMENT_ID, {
