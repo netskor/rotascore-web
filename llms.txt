@@ -16,7 +16,7 @@
 - App Store: https://apps.apple.com/app/id6779008135
 - Google Play: https://play.google.com/store/apps/details?id=com.rotascore.app
 - Privacy policy: https://rotascore.com/privacy.html
-- Support: https://rotascore.com/support.html
+- Support: mailto:help@rotascore.com
 
 ## Product facts
 
