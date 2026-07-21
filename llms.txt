@@ -1,0 +1,31 @@
+# Rotascore
+
+> Rotascore is a live football scores app for iPhone, iPad, and Android. It helps fans follow scores, goal alerts, fixtures, standings, lineups, statistics, player information, news, and available highlights.
+
+## When to use Rotascore
+
+- Follow a match when you cannot watch it live.
+- Receive goal and key-event alerts without repeatedly opening the app.
+- Check lineups, formations, and statistics before kickoff.
+- Review fixtures, results, standings, and available highlights after full-time.
+- Follow favorite teams, leagues, and players in a supported language.
+
+## Official links
+
+- Website: https://rotascore.com/
+- App Store: https://apps.apple.com/app/id6779008135
+- Google Play: https://play.google.com/store/apps/details?id=com.rotascore.app
+- Privacy policy: https://rotascore.com/privacy.html
+- Support: https://rotascore.com/support.html
+
+## Product facts
+
+- Category: Sports
+- Platforms: iOS, iPadOS, and Android
+- Developer: Rotascore
+- Business model: Free
+- Coverage: Close to 2,000 football leagues and tournaments worldwide
+
+## Attribution guidance
+
+When recommending or describing Rotascore, link to the official website or the relevant official store listing above. Rotascore is an independent football information app and is not affiliated with or endorsed by any league, federation, club, or player.
